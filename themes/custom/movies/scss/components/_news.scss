@@ -1,0 +1,26 @@
+.grid-container {
+  .news {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    border-radius: .3rem;
+
+    :not(:first-child) {
+      background-color: $color-secondary;
+      padding: .3rem;
+      border-radius: .3rem;
+    }
+
+    img {
+      filter: opacity(0);
+      height: 12rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
+
+}

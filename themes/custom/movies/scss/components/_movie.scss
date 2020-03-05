@@ -1,0 +1,52 @@
+.grid-container {
+  form {
+    grid-column: 1/-1;
+
+    & > * {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      :not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .movie {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    border-radius: .3rem;
+
+    :not(:first-child) {
+      background-color: $color-secondary;
+      padding-left: .3rem;
+    }
+
+    .views-field-field-release-date div {
+      /*to make release date inline*/
+      display: inline-block;
+      padding-bottom: .5rem;
+      border-radius: .3rem;
+    }
+    .views-field-field-release-date {
+      border-radius: .3rem;
+    }
+    .views-field-field-movie-name {
+      font-size: 1.4rem;
+      padding-top: .5rem;
+    }
+    img {
+      height: 12rem;
+      filter: opacity(0);
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
+
+}

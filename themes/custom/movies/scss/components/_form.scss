@@ -1,0 +1,32 @@
+.movies-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12rem);
+  grid-auto-flow: column;
+  grid-row-gap: 2rem;
+  margin-bottom: 1rem;
+
+
+  &__element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__label {
+      margin-right: 1rem;
+    }
+
+    select {
+      border-radius: .2rem;
+    }
+    input {
+      width: 50%;
+    }
+
+  }
+}
+
+form {
+  .form-actions {
+    align-self: center;
+  }
+}

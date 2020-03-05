@@ -1,0 +1,53 @@
+.movies-header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__navigation {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+      margin-right: 1rem;
+      a {
+        color: rgba(128, 147, 115, 1);
+      }
+      .is-active, a:hover {
+        color: #fff !important;
+      }
+    }
+  }
+
+  #block-movies-branding {
+    font-size: 2rem;
+    grid-column: 1/2;
+    font-weight: bold;
+    a {
+      color: #fff;
+    }
+  }
+  #block-movies-main-menu {
+    justify-self: end;
+  }
+}
+
+
+/*Pagination styling*/
+.js-pager__items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+
+  li {
+    margin-left: 1rem;
+  }
+
+}

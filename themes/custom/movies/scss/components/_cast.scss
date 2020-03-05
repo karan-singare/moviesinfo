@@ -1,0 +1,27 @@
+.grid-container {
+  .cast {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    border-radius: .3rem;
+
+    :not(:first-child) {
+      background-color: $color-secondary;
+      padding: .3rem;
+      border-radius: .3rem;
+      font-size: 1.4rem;
+    }
+
+    img {
+      filter: opacity(0);
+      height: 25rem;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
+
+}

@@ -1,0 +1,23 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+
+global-js:
+  dependencies:
+    - core/jquery
+  js:
+    js/main.js: {}
+    js/header.js: {}
+    js/grid.js: {}
+    js/latest_movies.js: {}
+
+
+caledea:
+  license:
+    name: Open Font License
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web
+  css:
+    theme:
+      //fonts.googleapis.com/css?family=Caladea: { type: external }
+      css/styles.css: {}
