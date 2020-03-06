@@ -64,6 +64,69 @@ $(document).ready(function() {
           i++;
         }
       }
+
+
+      /* remoing the redundant block */
+      if (response.page == '') {
+        // $('.region.region--banner').empty();
+        // movies_block_path = '.region.region-banner #block-views-block-banner-block-1';
+        // banner_items = $('.region.region-banner #block-views-block-banner-block-1 .views-row').clone(true);
+        // $(movies_block_path).empty();
+        // $(movies_block_path).addClass('banner-container');
+        //
+        //
+        // var banner_items_array = Object.keys(banner_items).map(function(key) {
+        //   return [Number(key), banner_items[key]];
+        // });
+        // main_item_array = [];
+        // for (var i = 0; i < 3; i++) {
+        //   main_item_array.push(banner_items_array[i]);
+        // }
+        //
+        //
+        // for (var i = 0; i < main_item_array.length; i++) {
+        //   $('.banner-container').append(main_item_array[i][1]);
+        //   src = main_item_array[i][1].querySelector('img').src;
+        //   main_item_array[i][1].className = main_item_array[i][1].className + ' item--' + i;
+        // }
+        $('.region.region--banner').empty();
+        movies_block_path = '.region.region-banner #block-views-block-banner-block-1';
+        $(movies_block_path).empty();
+        $(movies_block_path).addClass('banner-container');
+
+
+        // var banner_items_array = Object.keys(banner_items).map(function(key) {
+        //   return [Number(key), banner_items[key]];
+        // });
+        // main_item_array = [];
+        // for (var i = 0; i < 3; i++) {
+        //   main_item_array.push(banner_items_array[i]);
+        // }
+
+
+        // for (var i = 0; i < main_item_array.length; i++) {
+        //   $('.banner-container').append(main_item_array[i][1]);
+        //   src = main_item_array[i][1].querySelector('img').src;
+        //   main_item_array[i][1].className = main_item_array[i][1].className + ' item--' + i;
+        // }
+        // for (var i = 0; i < 3; i++) {
+        //   $('.banner-container').append('<div class="item--' + i + '"></div>');
+        // }
+        $('.banner-container').append('<button class="item--0"></button>');
+        $('.banner-container').append('<a href="#" class="item--1"></a>');
+        $('.banner-container').append('<button class="item--2"></button>');
+
+        $('.banner-container .item--1').append('<div class="banner--content"></div>');
+        $('.banner-container .banner--content').append('<p class="banner--heading">panipat</p>');
+        $('.banner-container .banner--content').append('<p class="banner--trailer">watch the trailer</p>');
+
+        /* sliding functionality */
+        $('.banner-container .item--2').click(function() {
+          console.log($('.banner-container .item--1'));
+        });
+
+
+      }
     }
   });
 

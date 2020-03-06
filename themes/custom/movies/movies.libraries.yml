@@ -11,6 +11,7 @@ global-js:
     js/header.js: {}
     js/grid.js: {}
     js/latest_movies.js: {}
+    js/banner.js: {}
 
 
 caledea:
