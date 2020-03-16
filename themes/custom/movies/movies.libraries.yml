@@ -10,8 +10,12 @@ global-js:
     js/main.js: {}
     js/header.js: {}
     js/grid.js: {}
+    js/functions/functions.js: {}
     js/latest_movies.js: {}
     js/banner.js: {}
+    js/footer.js: {}
+    js/components/movie.js: {}
+    js/components/cast.js: {}
 
 
 caledea:

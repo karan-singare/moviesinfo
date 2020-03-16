@@ -1,0 +1,28 @@
+.fullmovie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+
+  &--image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+  }
+  &--name {
+    font-size: 2rem;
+  }
+
+  &--synopsis {
+    grid-row: 2/span 1;
+    grid-column: 1/-1;
+  }
+  &--details {
+    & > * {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      grid-gap: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,9 +1,14 @@
 @import 'base/base';
+@import 'base/animation';
 // @import 'components/form';
 @import 'layout/header';
 @import 'layout/grid';
 @import 'layout/page';
 @import 'layout/banner';
+@import 'layout/footer';
 @import 'components/movie';
+@import 'components/fullmovie';
+@import 'components/fullcast';
 @import 'components/cast';
 @import 'components/news';
+@import 'vendor/animate';

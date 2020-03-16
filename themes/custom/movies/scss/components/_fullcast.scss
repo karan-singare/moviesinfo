@@ -1,0 +1,31 @@
+.fullcast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &--image {
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+    img {
+      width: 25rem;
+      height: 30rem;
+    }
+  }
+  &--details {
+    grid-row: 2/span 1;
+    display: grid;
+    justify-content: center;
+    & > * {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: max-content;
+      grid-gap: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &--info {
+    grid-row: 1/span 1;
+    grid-column: 2/-1;
+  }
+}
